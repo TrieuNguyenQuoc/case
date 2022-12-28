@@ -1,3 +1,4 @@
+
 class product {
     constructor(img, status ,price ) {
         this.img = img;
@@ -20,21 +21,20 @@ class product {
         return this.price;
     }
     setPrice(value) {
-        this.price = price ;
+        this.price = value ;
     }
 }
-var product0 = new product("./caseimg/1.jpg","THUÊ","300K/1day" ) ;
-var product1 = new product("./caseimg/2.jpg","THUÊ","1000K/1day") ;
-var product2 = new product("./caseimg/3.jpg","BÁN","1500K/1day") ;
-var product3 = new product("./caseimg/4.jpg","THUÊ", "900K/1day");
-var product5 = new product("./caseimg/5.jpg","THUÊ"," 950K/1day") ;
-var product6 = new product("./caseimg/6.jpg", "BÁN", "700K/1day") ;
-var product7 = new product("./caseimg/7.jpg", "THUÊ","1200K/1day") ;
-var product8 = new product("./caseimg/10.jpg", "THUÊ","1450K/1day") ;
+var product0 = new product("https://tse4.mm.bing.net/th?id=OIP.GRXW1KmAOTspj2m75IL5OQHaEL&pid=Api&P=0","THUÊ","2tr/đêm" ) ;
+var product1 = new product("https://tse2.mm.bing.net/th?id=OIP.YNOh01g7JBiAOtU4wTy3WgHaE7&pid=Api&P=0","THUÊ","2tr/đêm") ;
+var product2 = new product("https://tse2.mm.bing.net/th?id=OIP.yMF2lmcP3KHctQHv0WysuwAAAA&pid=Api&P=0","BÁN","4 tỷ") ;
+var product3 = new product("","THUÊ", "2tr/đêm");
+var product5 = new product("","THUÊ","") ;
+var product6 = new product("", "BÁN", "") ;
+var product7 = new product("", "THUÊ","") ;
+var product8 = new product("", "THUÊ","") ;
 let productArr1 = [product0, product1,product2,product3,product6,product5,product7,product8];
 var productArr0 = [product0, product1,product2];
 var productArr2 = [product3, product6,product5];
-var productArr3 = [product7, product8];
 var productArr4 = [product2,product7];
 function display(arr) {
     var user = localStorage.getItem("user");
@@ -77,19 +77,19 @@ function display(arr) {
     }
     document.getElementById("productMain").innerHTML = result;
 }
-function noibat() {
+function home() {
     display(productArr0)
 }
 function luachon() {
     display(productArr4)
 
 }
-function ngayle() {
+function ne() {
     display(productArr2)
 
 }
-function sukien() {
-    display(productArr3)
+function today() {
+    display(productArr4)
 
 }
 function allop() {
@@ -129,4 +129,4 @@ if (user === null) {
     document.getElementById("anhurl").setAttribute("value","");
     document.getElementById("taomoi").style.display="block";
     display(productArr1)
-}
+ }

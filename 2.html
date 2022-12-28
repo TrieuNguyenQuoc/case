@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script src="1.js"></script>
+
 </head>
 
 <style>
+  body {
+    text-align: center;
+  }
   #login1p {
     text-align: center;
   }
 </style>
 <body>
-<h1 style="text-align: center;
-background-color: #9b968e;
-padding: 40px;
-line-height:30px;
-color:#343030
-"> Đăng nhập tài khoản </h1>
-<div id="login1p">
-  <label for="userName" >Username: </label><input  type="text" value="" id="userName" autofocus > <br>
+<div id="login" style="padding:100px;line-height:20px;color:#11e7e7">
+  <img src="https://wedo.vn/wp-content/uploads/2020/04/sanh-khach-san-2.jpg"width="1000px" length="1000px" >
+  <h1 style="text-align: center;">Đăng nhập tài khoản </h1>
+  <label for="userName" >Username:</label><input  type="text" value="" id="username"><br>
   <br>
-  <label for="passWord">Password: </label><input  type="password" value="" id="passWord" > <br>
+  <label for="passWord">Password:</label><input  type="password" value="" id="password"><br>
   <br>
-  <label for="btn-login"></label> <input type="button" id="btn-login" onclick="dangnhap()" value=" Đăng nhập"> <br>
+  <label for="btn-login"></label> <input type="button" id="btn-login" onclick="dangnhap()" value="Đăng nhập"><br>
   <p id="text"></p>
-
 </div>
 </body>
 </html>

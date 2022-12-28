@@ -5,49 +5,45 @@
   <title>Title</title>
   <link rel="stylesheet" href="css.css">
 </head>
+body {
+text-align: center;
+}
 <body onload="allop()">
 <div id="header">
-  <h3>Sgalleria</h3>
+  <h3>Luxury Hotel</h3>
   <ul class="nav">
     <li><a href="">Home</a></li>
-    <li><a href="#pay-btn">View</a></li>
+    <li><a href="pro">HOT</a></li>
     <li><a href="">product</a>
       <ul class="navmore">
         <li onclick="noibat()"><a href="#content"  > </a></li>
         <br>
-        <li onclick="luachon()"><a href="#content"></a></li>
-
       </ul>
     </li>
     <li><a href="">News</a>
       <ul class="navmore" >
-        <li onclick="ngayle()"><a href="#content"></a></li>
         <br>
-        <li onclick="sukien()" ><a href="#content"></a></li>
-
+        <li onclick="today()" ><a href="#content"></a></li>
       </ul>
     </li>
 
   </ul>
   <div id="btn">
     <a id="login" href="2.html"> login </a>
-    <input type="button" id="exitt" onclick="repage()" value="LOG-UOT">
-    <a href="#taomoi"> <input type="button" id="addproduct" onclick="add()" value="ADD"></a>
+    <input type="button" id="exitt" onclick="repage()" value="">
+    <a href="#taomoi"> <input type="button" id="addproduct" onclick="add()" value="Edit"></a>
 
   </div>
 </div>
 <div id="slider">
-  <img id="imgContent" src="https://songhantourist.com/upload/articles-images/images/tan-huong-ki-nghi-dang-cap-tai-vinpearl-phu-quoc.jpg"alt="">
-  <input type="button" value="Đặt oline FB " id="pay-btn" onclick="oderFB()">
+  <img id="imgContent" src="https://wedo.vn/wp-content/uploads/2020/04/sanh-khach-san-2.jpg"alt="">
 </div>
 <div id="main">
   <div id="content">
-    <h3 id="text-content"> </h3>
-    <h2 id="sub-content">  </h2>
   </div>
-  <div id="taomoi"  style="margin-left:10%;
-                            display: none;
-">
+  <div id="taomoi"  style="margin-left:10%; display: none;">
+
+
     <p>nhập link ảnh</p>
     <label> <input type="text" value="" id="anhurl"
                    style="padding: 4px 20px;
@@ -55,27 +51,27 @@
 "
     > </label><br>
     <br>
-    <p> mua hoặc thuê</p>
+    <p> Bán hoặc thuê</p>
     <label for="payorrent"> <input type="text" value="" id="payorrent"
                                    style="padding: 4px 20px;
                                           border-radius: 5px;
 "
     > </label> <br>
     <br>
-    <p> thông tin gía sản phẩm </p>
+    <p> thông tin giá sản phẩm </p>
     <label for="gia"> <input type="text" value="" id="gia"
-                             style="padding: 4px 20px;
+                             style="padding: 4px 10px;
                              border-radius: 5px;
-"
-    > </label> <br>
+">
     <br>
-    <input class="submitt" type="submit" onclick="uploadproduct()" />
+    <input class="completed" type="submit" onclick="uploadproduct()" />
   </div>
   <div id="productMain"></div>
   <div id="footer">
-    <h3 id="textInFor"></h3>Địa chỉ KĐT Nam Trung Yên Cầu Giấy Hà Nội<br>
-    <h4 class="subInFor"></h4>Hotlit 0369180596<br>
-    <h4 class="subInFor"></h4>trieunguyenquoc020604@gmail.com</pr>
+    <h3 id="textInFor"></h3>Địa chỉ: Số 10_KĐT Nam Trung Yên_Cầu Giấy_Hà Nội<br>
+    <h4 class="subInFor"></h4>Tư Vấn Và Chăm Sóc Khách Hàng <br>
+    <h4 class="subInFor"></h4>0369180596
+    <h4 class="subInFor"></h4>email: trieunguyenquoc020604@gmail.com</pr>
   </div>
 </div>
 </body>
